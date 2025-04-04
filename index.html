@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,750;1,750&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <header></header>
+    <main>
+      <form class="input__container">
+        <div class="inputs">
+          <label for="heading">Введите название приложения:</label>
+          <input
+            id="heading"
+            class="input__heading"
+            maxlength="20"
+            type="text"
+          />
+        </div>
+        <div class="inputs">
+          <label for="fileSelect">Выберите иконку:</label>
+          <input id="fileSelect" class="input__file" type="file" />
+        </div>
+        <div class="inputs">
+          <label for="description">Введите описание вашего приложения:</label>
+          <input
+            id="description"
+            class="input__description"
+            maxlength="100"
+            type="text"
+          />
+        </div>
+        <button type="submit" id="addButton">Завершить создание</button>
+      </form>
+      
+      <p id="warning"></p>
+      <div id="cardsMainContainer" class="cards__main-container"></div>
+      <div class="card__modal-window">
+        <div class="card__modal-content">
+          <button class="card__modal-close">Закрыть</button>
+          <form class="card-form__edit-card" id="cardFormEditCard">
+            <h2>Редактировать карточку</h2>
+            <div>
+              <label for="editCardHeading">Заголовок</label>
+              <input type="text" name="" id="editCardHeading">
+            </div>
+            <div>
+              <label for="editCardDescription">Описание</label>
+              <input type="text" name="" id="editCardDescription">
+            </div>
+            <button type="submit" id="editCardFormButton">Изменить</button>
+              <button class="delete-button"></button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <template id="cardTemplate">
+      <div class="card__container">
+        <section class="card__top-side">
+          <img class="card__image" src="" alt="" />
+          <h3 class="card__heading"></h3>
+        </section>
+        <section class="card__bottom-side">
+          <p class="card__description"></p>
+          <button class="card__button-static like-unpressed"></button>
+          
+        </section>
+      </div>
+    </template>
+  </body>
+</html>

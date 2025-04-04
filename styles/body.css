@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.input__container {
+  display: grid;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: 'Montserrat';
+}
+
+input {
+  all: unset;
+  padding: 8px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: 2px solid #8f8dff;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  border: 2px solid #8f8dff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.input__description {
+  height: 60px;
+}
+
+#addButton {
+  background-color: #42a546;
+  color: white;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #306b33; 
+}
+
+#warning {
+  color: red; 
+  font-size: 14px; 
+}
+
+.page::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0.1turn, #ff00aa, #a200ff);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.cards__main-container {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: space-between;
+}

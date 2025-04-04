@@ -1,0 +1,76 @@
+.card__container {
+    padding: 20px;
+    margin: 20px; 
+    background: linear-gradient(#c300ff, #9198e5);
+    border-radius: 20px 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.card__top-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #a200ff;
+    border-radius: 5px;
+}
+
+.card__bottom-side {
+    display: grid;
+    grid-template-columns: 1fr 30px 30px;
+}
+.card__image {
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    max-width: 250px;
+    width: 50px;       
+    height: auto; 
+}
+
+.card__description {
+    text-wrap: wrap;
+    font-size: 90%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.card__heading {
+    text-align: start;
+    width: 200px;
+}
+
+.like-pressed {
+    background-image: url('/assets/icons/likePressed.png');
+}
+
+.like-unpressed {
+    background-image: url('/assets/icons/likeUnpressed.png');
+}
+
+.card__button-static {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-color: rgba(244, 165, 96, 0);
+    border: none;
+}
+
+.delete-button {
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border: none;
+    background-color: #c300ff00;
+    background-image: url('/assets/icons/deleteButton.png') ;
+}
+
+.edit-button {
+    width: 30px;
+    height: 30px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
