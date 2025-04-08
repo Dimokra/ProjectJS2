@@ -8,4 +8,4 @@ function createExampleCards(obj, template, parent) {
     })
   }
   
-  export {createExampleCards}
+export {createExampleCards}
