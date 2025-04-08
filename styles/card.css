@@ -50,23 +50,23 @@
 .card__button-static {
     width: 30px;
     height: 30px;
+    margin: 35px;
+    margin-top: 60px;
     background-size: cover;
     background-color: rgba(244, 165, 96, 0);
     border: none;
 }
 
 .delete-button {
-    height: 30px;
-    width: 30px;
     background-size: cover;
     border: none;
     background-color: #c300ff00;
-    background-image: url('/assets/icons/deleteButton.png') ;
 }
 
-.edit-button {
-    width: 30px;
-    height: 30px;
+#editCardFormButton {
+    background-size: cover;
+    border: none;
+    background-color: #c300ff00;
 }
 
 .inputs {

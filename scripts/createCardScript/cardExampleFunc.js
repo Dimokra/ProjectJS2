@@ -1,3 +1,4 @@
+//создание первоначальных приложений
 function createExampleCards(obj, template, parent) {
     obj.forEach(({title, imageSrc, description}) => {
       const cloneCard = template.cloneNode(true)

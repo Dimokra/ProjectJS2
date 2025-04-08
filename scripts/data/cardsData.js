@@ -1,8 +1,11 @@
+//иконки
 import agaImage from '../../assets/images/Aga.png'
 import notifAppImage from '../../assets/images/NotifApp.png'
 
+//массив с данными о приложениях
 let cardsData = [];
 
+//массив с первоначальными приложениями
 let cardsExample = [
     {
       title: 'Напоминание',

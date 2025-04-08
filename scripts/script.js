@@ -2,9 +2,11 @@ import '../styles/main.css'
 import { createExampleCards } from "./createCardScript/cardExampleFunc"
 import {cardTemplate, cardParent, addObjectToArray, cloneCardWithData, warnNotif} from "./createCardScript/cardFromInput"
 import { cardsExample } from './data/cardsData'
-import likeBut from './cardActions/likeBut.js'
+import likeDelBut from './cardActions/likeDelBut.js'
 import { closeModal } from './modalScript/modalHandler.js'
 import * as Modal from "./cardEdit/firstMenu.js"
+
+// создание первоначальных карт
 createExampleCards(cardsExample, cardTemplate, cardParent)
 
 document.querySelector(".input__container").addEventListener("submit", function (e) {
@@ -16,5 +18,6 @@ document.querySelector(".input__container").addEventListener("submit", function 
   cardParent.appendChild(newClonedCard);
 });
 
-likeBut(cardParent)
+// добавление слушателей для кнопок(кнопка лайка, кнопка удаления, кнопка закрытия модального окна)
+likeDelBut(cardParent)
 closeModal(document.querySelector('.card__modal-window'))

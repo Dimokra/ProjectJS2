@@ -1,5 +1,5 @@
 import { closeModal } from './modalHandler.js'
-
+//редактирование и небольшая валидация
 export function handleFormSubmit(e, cardHeading, cardDescription, editCardHeading, editCardDescription, menuVis) {
     e.preventDefault();
   
